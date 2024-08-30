@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/d584ba5d-d63f-47be-ae1b-301fbc52b2ef)# DOCKER-Creating-A-Python-Flask-Web-Application-With-A-Redis-Database
 This is a Capstone mini project n3 from my self paced docker learning 
 
 The goal of the website is to calculate the number of visitors of the website and store it in the Redis database
@@ -22,17 +21,17 @@ Then Creating the Dockerfile for the app image :
 
 Then creating the Docker Compose file : 
 
-build : .  , since the dockerfile is in the same rep and the docker compose file
+build : .  , since the dockerfile is in the same rep as the docker compose file
 
 volumes : .:/app , so it copies all files and changements done locally to the container and so to the website
 
 FLASK_DEBUG: "true" , so every changement is done automatically and we dont need to stop the container and rebuild the image ! 
 
-and the redis is to create a container running the redis db 
+and the redis image is to create a container running the redis db 
 
 ![image](https://github.com/user-attachments/assets/975db93c-70c8-4331-84e6-27da088bb202)
 
-*Webpage is exposed on port 5000 and docker compose is exposed on port 9000*
+*Webpage Container is exposed on port 5000 and docker compose is exposed on port 9000*
 
 
 Then applying the docker compose file : 
@@ -50,13 +49,12 @@ after refreshing many times :
 ![image](https://github.com/user-attachments/assets/f3c8c161-69ed-4c3e-b044-445be5da504e)
 
 
-Testing some changes in the app.py Code and seeing if it workds automatically ! 
+Testing some changes in the app.py Code and seeing if it works automatically ! 
 
 ![image](https://github.com/user-attachments/assets/5565c450-4014-4c10-8888-a4299c74c3c6)
 
 
-![image](https://github.com/user-attachments/assets/8120181d-5c91-4107-99ca-49386e554bd5)
-
+*Added "MODIFIED"*
 
 *SUCCES*
 
